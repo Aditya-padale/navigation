@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎓 College Campus Navigator</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Inline styles for quick enhancements */
+    header p {
+      font-size: 16px;
+      margin: 5px 0;
+      color: #e0e7ff;
+    }
+
+    .search-container {
+      margin-top: 20px;
+    }
+
+    #map {
+      height: 60vh;
+      margin: 20px 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background: #1f2937;
+      color: #f3f4f6;
+      padding: 20px 10px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    footer p:first-child {
+      font-weight: 600;
+      color: #60a5fa;
+    }
+
+    footer p:last-child {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎓 College Campus Navigator</h1>
+    <p>📍 Click on a location to get directions</p>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="searchBox" placeholder="Search location..." oninput="showSuggestions()" />
+    <button onclick="searchLocation()">Search</button>
+    <ul id="suggestions"></ul>
+  </div>
+
+  <div id="map"></div>
+
+  <footer>
+    <p>© 2025 CampusNav. Built with Leaflet.js</p>
+    <p>AI&DS DEPARTMENT, ADCET ASHTA</p>
+    <p>IP PROJECT</p>
+    <p>RONIT SWAMI</p>
+    <p>ADITYA PADALE</p>
+    <p>KETAKI PATIL</p>
+    <p>TEJAL GHODAKE</p>
+    <p>Powered by Passion for Navigation</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
