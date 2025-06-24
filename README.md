@@ -68,8 +68,8 @@ navigation-main/
 
 ### 1. Clone this repository
 ```bash
-git clone https://github.com/your-username/navigation-main.git
-cd navigation-main
+git clone https://github.com/Aditya-padale/navigation.git
+cd navigation
 ```
 
 ### 2. Run Locally
